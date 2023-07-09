@@ -231,8 +231,6 @@
     object-fit: cover; /* 填充容器并裁剪 */
   }
   
-  
-  
   .right-section {
     flex: 1;
   }
@@ -278,6 +276,6 @@
     width: 100%;
     height: 200px;
   }
-  
+
   </style>
   

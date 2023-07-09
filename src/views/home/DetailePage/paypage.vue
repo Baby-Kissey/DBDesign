@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .pay-page {
   display: flex;
   flex-direction: column;

@@ -4,9 +4,12 @@ import loginMain from '../views/login_register/loginMain'
 
 
 import RepairPage from '../views/home/DetailePage/repairpage.vue'
+import RecyclePrice from '../views/home/DetailePage/recycleprice.vue'
 import PricePage from '../views/home/DetailePage/pricepage.vue'
 import PayPage from '../views/home/DetailePage/paypage.vue'
 import CenterPage from '../views/home/CenterPage/CenterPage.vue'
+import CenterPageGoBack from '../views/home/CenterPage/CenterPage.vue'
+
 const routes = [
   {
     path: '/',
@@ -56,11 +59,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "DetailsPage" */ '../views/home/DetailePage/DetailsPage.vue')
   },
   {//进入回收页
-    path: '/RecoveryPage',
-    name: 'RecoveryPage',
+    path: '/recoverypage',
+    name: 'recoverypage',
     component: () => import(/* webpackChunkName: "DetailsPage" */ '../views/home/DetailePage/RecoveryPage.vue')
-  },
 
+  },
 
   {
     path: '/repairpage',
@@ -73,6 +76,11 @@ const routes = [
     component: PricePage
   },
   {
+    path: '/recycleprice',
+    name: 'recycleprice',
+    component: RecyclePrice
+  },
+  {
     path: '/paypage',
     name: 'paypage',
     component: PayPage
@@ -81,6 +89,11 @@ const routes = [
     path: '/CenterPage',
     name: 'CenterPage',
     component: CenterPage
+  },
+  {
+    path: '/repairpage',
+    name: 'CenterPageGoBack',
+    component: CenterPageGoBack
   },
 ]
 
