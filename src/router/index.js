@@ -58,21 +58,21 @@ const routes = [
    {//查看商品详情
     path: '/DetailsPage',
     name: 'DetailsPage',
-    component: () => import(/* webpackChunkName: "DetailsPage" */ '../views/home/DetailePage/DetailsPage.vue')
+    component: () => import(/* webpackChunkName: "DetailsPage" */ '../views/DetailePage/DetailsPage.vue')
   },
   {//进入回收页
 
     path: '/recoverypage',
     name: 'recoverypage',
-    component: () => import(/* webpackChunkName: "DetailsPage" */ '../views/home/DetailePage/RecoveryPage.vue')
+    component: () => import(/* webpackChunkName: "DetailsPage" */ '../views/DetailePage/RecoveryPage.vue')
 
   },
-  {
+  // {
 
-    path: '/RecoveryPage',
-    name: 'RecoveryPage',
-    component: () => import(/* webpackChunkName: "DetailsPage" */ '../views/home/DetailePage/RecoveryPage.vue')
-  },
+  //   path: '/RecoveryPage',
+  //   name: 'RecoveryPage',
+  //   component: () => import(/* webpackChunkName: "DetailsPage" */ '../views/DetailePage/RecoveryPage.vue')
+  // },
 
 
 
